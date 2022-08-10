@@ -257,15 +257,14 @@ method with minimal changes.</p>
 </dl>
 <p class="rubric">Examples</p>
 <p>With :code: ‘ivy.Container’ instance method:
-&gt;&gt;&gt; x = ivy.Container(a=ivy.array([0, 0.5]),
-&gt;&gt;&gt;                   b=ivy.array([4, 5]))
+&gt;&gt;&gt; x = ivy.Container(a=ivy.array([0, 0.5]),            b=ivy.array([4, 5]))
 &gt;&gt;&gt; y = x.broadcast_to((3,2))
 &gt;&gt;&gt; print(y)
 {</p>
 <blockquote>
 <div><dl class="simple">
-<dt>a: ivy.array([[0, 0.5],</dt><dd><p>[0, 0.5],
-[0, 0.5]]),</p>
+<dt>a: ivy.array([[0., 0.5],</dt><dd><p>[0., 0.5],
+[0., 0.5]]),</p>
 </dd>
 <dt>b: ivy.array([[4, 5],</dt><dd><p>[4, 5],
 [4, 5]])</p>
@@ -524,10 +523,9 @@ method with minimal changes.</p>
 </dd>
 </dl>
 <p class="rubric">Examples</p>
-<p>With :code: ‘ivy.Container’ static method:
-&gt;&gt;&gt; x = ivy.Container(a=ivy.array([1]),
-&gt;&gt;&gt;                   b=ivy.array([2]))
-&gt;&gt;&gt; y = ivy.Container.static_broadcast_to(x,(3,1))
+<p>With <code class="code docutils literal notranslate"><span class="pre">ivy.Container</span></code> static method:
+&gt;&gt;&gt; x = ivy.Container(a=ivy.array([1]),            b=ivy.array([2]))
+&gt;&gt;&gt; y = ivy.Container.static_broadcast_to(x,(3, 1))
 &gt;&gt;&gt; print(y)
 {</p>
 <blockquote>
