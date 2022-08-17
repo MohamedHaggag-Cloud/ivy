@@ -166,14 +166,14 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Framework Classes</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../../stateful/converters.html">Converters</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../stateful/sequential.html">Sequential</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../stateful/initializers.html">Initializers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../stateful/layers.html">Layers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../stateful/norms.html">Norms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../stateful/converters.html">Converters</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../stateful/optimizers.html">Optimizers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../stateful/module.html">Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../stateful/layers.html">Layers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../stateful/norms.html">Norms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../stateful/activations.html">Activations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../stateful/sequential.html">Sequential</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Docs</span></p>
 <ul>
@@ -237,7 +237,7 @@
 <li><p><em>————————–</em></p></li>
 <li><p>With <code class="code docutils literal notranslate"><span class="pre">ivy.Array</span></code> inputs</p></li>
 <li><p><em>&gt;&gt;&gt; x = ivy.array([-1, 0, 1])</em></p></li>
-<li><p><em>&gt;&gt;&gt; y = ivy.to_numpy(x, copy=False)</em></p></li>
+<li><p><em>&gt;&gt;&gt; y = ivy.to_numpy(x, copy=True)</em></p></li>
 <li><p><em>&gt;&gt;&gt; print(y)</em></p></li>
 <li><p><em>[-1  0  1]</em></p></li>
 <li><p><em>&gt;&gt;&gt; x = ivy.array([[-1, 0, 1],[-1, 0, 1], [1,0,-1]])</em></p></li>
